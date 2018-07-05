@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>DF Start Theme</title>
+	<title>Theme</title>
 
 	<?php wp_head(); ?>
 
@@ -20,7 +20,32 @@
 
 <body <?php body_class( $dftheme_classes ); ?>>
 
-	<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-	
-	<!-- custom header background image -->
-	<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="">
+	<div class="container">
+
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="navbar navbar-default">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a href="#" class="navbar-brand">DF Theme</a>
+						</div>
+						<div class="collapse navbar-collapse" id="navbar-collapse">
+						<?php wp_nav_menu( array( 
+							'theme_location' => 'primary',
+							'container'=> false,
+							'menu_class'=> 'nav navbar-nav navbar-right'
+						) ); ?>
+						</div>
+					</div>
+				</div><!--navbar-->
+			</div><!--col-xs-12-->
+		</div><!--row-->			
+			
+		<!-- custom header background image -->
+		<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="">
