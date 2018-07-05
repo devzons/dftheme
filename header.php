@@ -12,12 +12,12 @@
 <?php // add custom class on specific page
 
 	if( is_front_page() ) :
-		$dfstart_classes = array( 'df-class', 'my-class' );
+		$dftheme_classes = array( 'df-class', 'my-class' );
 	else:
 		$dfstart_classes = array();
 	endif;
  ?>
 
-<body <?php body_class( $dfstart_classes ); ?>>
+<body <?php body_class( $dftheme_classes ); ?>>
 
 	<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
