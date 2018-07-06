@@ -24,4 +24,4 @@
 
 	<hr>
 
-</articla>
+</article>
