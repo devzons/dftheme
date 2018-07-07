@@ -5,6 +5,7 @@
 
 // INCLUDE
 include( get_stylesheet_directory() . '/inc/enqueue.php' );
+include( get_stylesheet_directory() . '/inc/walker.php' );
 include( get_stylesheet_directory() . '/inc/theme-setup.php' );
 include( get_stylesheet_directory() . '/inc/widgets-setup.php' );
 
